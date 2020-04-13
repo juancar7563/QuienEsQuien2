@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/tituloFragment">
+    <fragment
+        android:id="@+id/tituloFragment"
+        android:name="com.example.quienesquien2.titulo.TituloFragment"
+        android:label="fragment_titulo"
+        tools:layout="@layout/fragment_titulo" >
+        <action
+            android:id="@+id/action_tituloFragment_to_juegoFragment2"
+            app:destination="@id/juegoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/juegoFragment"
+        android:name="com.example.quienesquien2.juego.JuegoFragment"
+        android:label="fragment_juego"
+        tools:layout="@layout/fragment_juego" />
+</navigation>
